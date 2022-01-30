@@ -252,8 +252,10 @@ building_nanite_industrial_replicator_1 = {
 	category = manufacturing
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }	
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 	
 	resources = {
@@ -291,8 +293,10 @@ building_nanite_food_replicator = {
 	category = manufacturing
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }	
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 	
 	allow = {

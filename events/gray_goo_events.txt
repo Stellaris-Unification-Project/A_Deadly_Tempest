@@ -56,7 +56,7 @@ country_event = {
 				name_list = "graygoo"
 				ignore_initial_colony_error = yes
 				authority = "auth_machine_intelligence"
-				species = last_created
+				species = last_created_species
 				flag = {
 					icon= {
 						category = "special"
@@ -321,10 +321,7 @@ planet_event = {
 		destroy_colony = yes
 		if = {
 			limit = {
-				NOR = {
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat
-				}
+				is_artificial = no
 			}
 			change_pc =  pc_gray_goo
 			reset_planet = yes
@@ -511,7 +508,7 @@ country_event = {
 			country_event = { id = graygoo.16 }
 		}
 		observer_event = { id = observer.65 }
-		every_planet = {
+		every_system_planet = {
 			limit = { is_planet_class = pc_gray_goo }
 			add_modifier = {
 				modifier = "terraforming_candidate"
@@ -810,7 +807,7 @@ country_event = {
 					civic = civic_meritocracy
 					civic = civic_environmentalist
 				}
-				species = last_created
+				species = last_created_species
 				ethos = {
 					ethic = "ethic_fanatic_xenophile"
 					ethic = "ethic_egalitarian"
@@ -1880,7 +1877,7 @@ country_event = {
 	trigger = {
 		event_target:lcluster_factory_system = {
 			any_fleet_in_system = {
-				owner = { is_same_value = root }
+				is_owned_by = root
 			}
 		}
 		event_target:lcluster_factory_system = {

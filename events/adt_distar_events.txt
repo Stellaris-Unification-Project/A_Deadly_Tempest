@@ -145,9 +145,9 @@ country_event = {
 							exists = owner
 							exists = leader
 							exists = solar_system
-							owner = { is_same_value = root }
+							is_owned_by = root
 						}
-						every_ship = {
+						every_fleet_in_system = {
 							limit = { is_ship_class = shipclass_science_ship }
 							solar_system = { save_global_event_target_as = CmtTargetLgateOrininatingSystem }
 						}

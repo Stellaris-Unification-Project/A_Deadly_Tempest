@@ -308,7 +308,7 @@ fleet_event = {
 	trigger = {
 		has_fleet_flag = nanite_mother_ship
 		num_ships < 11
-		any_ship = { is_ship_size = graygoo_mothership }
+		any_fleet_in_system = { is_ship_size = graygoo_mothership }
 	}
 	
 	mean_time_to_happen = {
@@ -333,7 +333,7 @@ fleet_event = {
 		mid_game_years_passed >= -10
 		has_fleet_flag = nanite_mother_ship
 		num_ships < 21
-		any_ship = { is_ship_size = graygoo_mothership }
+		any_fleet_in_system = { is_ship_size = graygoo_mothership }
 	}
 	
 	mean_time_to_happen = {
@@ -358,7 +358,7 @@ fleet_event = {
 		end_game_years_passed >= -10
 		has_fleet_flag = nanite_mother_ship
 		num_ships < 41
-		any_ship = { is_ship_size = graygoo_mothership }
+		any_fleet_in_system = { is_ship_size = graygoo_mothership }
 	}
 	 
 	mean_time_to_happen = {

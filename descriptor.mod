@@ -14,6 +14,6 @@ tags={
 	"Nanites"
 }
 picture="thumbnail.jpg"
-supported_version="2.5.*"
+supported_version="3.2.2"
 path="C:/Users/Max/Documents/Paradox Interactive/Stellaris/mod/a_deadly_tempest_2.5"
 remote_file_id="1539768809"
